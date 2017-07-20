@@ -83,11 +83,7 @@ public class LoadGame extends JPanel implements Runnable
 		g.drawString("全民飞机大战", (Config.window_width - 250)/2, 180);
 		g.setColor(Color.WHITE);
 		g.setFont(f);
-		if (x % 6 > 3)
-		{
-			g.drawString("游戏加载中...", 150,400);
-		}
-
+		g.drawString("游戏加载中...", 150,400);
 	}
 	
 	/**
@@ -104,7 +100,7 @@ public class LoadGame extends JPanel implements Runnable
 			repaint();
 			try
 			{
-				Thread.sleep(50);
+				Thread.sleep(10);
 			} catch (InterruptedException e)
 			{
 				e.printStackTrace();
